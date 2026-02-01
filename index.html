@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Wheel of Names</title>
+    <link rel="stylesheet" href="style.css?v=1736780100000">
+</head>
+<body>
+
+    <img src="images/Time2Win.png" class="time2win-logo" alt="Time2Win Logo">
+
+        <div class="grouped-main">
+        <!-- Wheel of Names Title -->
+        <div class="title-container">
+            <img src="images/wheelofnames.png" alt="Wheel of Names" class="wheel-title-img">
+        </div>
+
+        <!-- Names List (separate) -->
+        <div class="names-container">
+            <div class="list-frame-wrapper">
+                <img src="images/list frame.png" alt="Frame" class="list-frame">
+                <form id="namesForm">
+                    <textarea id="names" name="names" placeholder="Enter names here&#10;One per line" required autocomplete="off" rows="5"></textarea>
+                </form>
+            </div>
+        </div>
+        
+        <div class="wheel-container">
+            <div class="wheel-wrapper">
+                <div class="wheel-frame">
+                    <img src="images/frame.png" alt="Frame">
+                </div>
+                <canvas id="wheelCanvas" width="600" height="600"></canvas>
+                <div class="spin-pointer-group">
+                    <div class="wheel-pointer">
+                        <img src="images/pointer.png" alt="Pointer" class="pointer-img">
+                    </div>
+                    <button id="spinBtn"><img src="images/button.png" alt="SPIN"></button>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    <!-- Winner Popup Modal -->
+    <div id="winnerModal" class="winner-modal">
+        <div class="winner-modal-content">
+            <img src="images/winner.png" alt="WINNER!" class="winner-title-img">
+            <div class="popup-frame">
+                <img src="images/popup_frame.png" alt="Frame" class="popup-frame-img">
+                <div class="popup-content-inner">
+                    <div class="winner-name-box">
+                        <img src="images/namebox.png" alt="Name Box" class="namebox-img">
+                        <p class="winner-name-popup" id="winnerNamePopup"></p>
+                    </div>
+                    <img src="images/congratulations.png" alt="Congratulations!" class="congratulations-img">
+                    <div class="modal-close-btn-small" onclick="document.getElementById('winnerModal').classList.remove('show')">
+                        <img src="images/popup_close button.png" alt="Close Button" class="close-btn-small-img">
+                        <img src="images/CLOSEtext.png" alt="CLOSE" class="close-btn-text">
+                    </div>
+                </div>
+            </div>
+            <img src="images/popup_coins.png" alt="Coins" class="popup-coins-img">
+        </div>
+    </div>
+
+    <div class="girl-decoration">
+        <img src="images/girl.png" alt="Girl" class="girl-img">
+    </div>
+    <div class="coins-decoration coins-1">
+        <img src="images/coins.png" alt="Coin" class="coin-img">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
