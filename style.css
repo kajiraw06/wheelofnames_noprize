@@ -1210,6 +1210,13 @@ button:disabled {
 
 /* Large Desktop (1440px - 1919px) */
 @media (max-width: 1919px) and (min-width: 1440px) {
+    .title-container {
+        position: absolute;
+        left: 30%;
+        top: 10%;
+        transform: translateX(-50%);
+    }
+
     .wheel-title-img {
         width: 400px;
         top: -100px;
@@ -1218,7 +1225,7 @@ button:disabled {
     
     .wheel-container {
         position: absolute; 
-        left: 70% !important;
+        left: 65% !important;
         top: 50% !important;
         transform: translate(-50%, -50%);
     }
@@ -1244,8 +1251,8 @@ button:disabled {
     
     .names-container {
         position: absolute;
-        left: 30% !important;
-        top: 33% !important;
+        left: 20% !important;
+        top: 27% !important;
         transform: translateY(-50%);
         max-width: 200px;
     }
@@ -1268,6 +1275,8 @@ button:disabled {
         height: 160px !important;
     }
 }
+
+
 
 /* Medium Desktop (1280px - 1439px) */
 @media (max-width: 1439px) and (min-width: 1280px) {
