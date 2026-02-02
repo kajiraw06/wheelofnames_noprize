@@ -1242,8 +1242,8 @@ button:disabled {
     }
     
     #wheelCanvas {
-        width: 650px !important;
-        height: 650px !important;
+        width: 630px !important;
+        height: 630px !important;
         position: relative;
         left: 0;
         top: 0;
